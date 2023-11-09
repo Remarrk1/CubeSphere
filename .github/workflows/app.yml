@@ -1,0 +1,38 @@
+name: Build, Test
+# События, которые запускают рабочий процесс
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+# Определение задач (jobs)
+jobs:
+  # Задача "build"
+  build:
+    runs-on: self-hosted
+    # Шаги (steps) задачи "build"
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.11'
+  # Задача "test"
+  test:
+
+    needs: build
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.11'
+
+      - name: Run tests
+        run: python -m unittest -v test
