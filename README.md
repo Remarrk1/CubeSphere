@@ -1,7 +1,7 @@
 # CubeSphere
-[![Build, Test](https://github.com/Remarrk1/DrawingCircle/actions/workflows/app.yml/badge.svg)](https://github.com/Remarrk1/CubeSphere/actions/workflows/app.yml)
 [![License: MIT ](https://img.shields.io/badge/License-MIT-violet.svg)](https://opensource.org/licenses/MIT)
 ![Python Version](https://img.shields.io/badge/python-3.9-blue)
+[![Build, Test](https://github.com/Remarrk1/DrawingCircle/actions/workflows/app.yml/badge.svg)](https://github.com/Remarrk1/CubeSphere/actions/workflows/app.yml)
 # Лабораторная работа по дисциплине "Компьютерная графика" №5. 
 
 Приложение отображает пересечение сферы и куба.
