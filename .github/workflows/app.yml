@@ -35,4 +35,4 @@ jobs:
           python-version: '3.11'
 
       - name: Run tests
-        run: python -m unittest -v test
+        run: python -m unittest -v tests.test
